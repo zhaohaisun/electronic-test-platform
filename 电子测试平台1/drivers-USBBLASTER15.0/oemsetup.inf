@@ -1,0 +1,14 @@
+[Source Media Descriptions]
+    1  = "Altera Programmer Driver" , TAGFILE = disk1
+    2  = "Altera ByteBlaster Driver" , TAGFILE = disk1
+
+[Installable.Drivers]
+driver1 = 1:pgdnt.dll,    "ALTERA",   "Altera Programmer" , , ,
+driver2 = 2:pgdhdlc.dll,  "ALTERA",   "Altera ByteBlaster" , , ,
+
+[driver1]
+1:i386\pgdnt.sys
+1:i386\pgdnt.hlp
+
+[driver2]
+2:i386\pgdhdlc.sys

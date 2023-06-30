@@ -1,0 +1,998 @@
+Simulator report for DDS
+Thu Mar 17 23:39:06 2022
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|content
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 ms      ;
+; Simulation Netlist Size     ; 419 nodes    ;
+; Simulation Coverage         ;      16.19 % ;
+; Total Number of Transitions ; 299288       ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; FLEX10K      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; DDS.vwf    ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------+
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|content ;
++-------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      16.19 % ;
+; Total nodes checked                                 ; 419          ;
+; Total output ports checked                          ; 451          ;
+; Total output ports with complete 1/0-value coverage ; 73           ;
+; Total output ports with no 1/0-value coverage       ; 378          ;
+; Total output ports with no 1-value coverage         ; 378          ;
+; Total output ports with no 0-value coverage         ; 378          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                      ;
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                             ; Output Port Name                                                                      ; Output Port Type ;
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+
+; |DDS|fclk                                                                             ; |DDS|fclk                                                                             ; out              ;
+; |DDS|pwords[0]                                                                        ; |DDS|pwords[0]                                                                        ; out              ;
+; |DDS|pwords[1]                                                                        ; |DDS|pwords[1]                                                                        ; out              ;
+; |DDS|pwords[2]                                                                        ; |DDS|pwords[2]                                                                        ; out              ;
+; |DDS|pwords[3]                                                                        ; |DDS|pwords[3]                                                                        ; out              ;
+; |DDS|pwords[4]                                                                        ; |DDS|pwords[4]                                                                        ; out              ;
+; |DDS|pwords[5]                                                                        ; |DDS|pwords[5]                                                                        ; out              ;
+; |DDS|ddsout[0]                                                                        ; |DDS|ddsout[0]                                                                        ; pin_out          ;
+; |DDS|ddsout[1]                                                                        ; |DDS|ddsout[1]                                                                        ; pin_out          ;
+; |DDS|ddsout[2]                                                                        ; |DDS|ddsout[2]                                                                        ; pin_out          ;
+; |DDS|ddsout[3]                                                                        ; |DDS|ddsout[3]                                                                        ; pin_out          ;
+; |DDS|ddsout[4]                                                                        ; |DDS|ddsout[4]                                                                        ; pin_out          ;
+; |DDS|ddsout[5]                                                                        ; |DDS|ddsout[5]                                                                        ; pin_out          ;
+; |DDS|ddsout[6]                                                                        ; |DDS|ddsout[6]                                                                        ; pin_out          ;
+; |DDS|ddsout[7]                                                                        ; |DDS|ddsout[7]                                                                        ; pin_out          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[7]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[7]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[6]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[6]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[5]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[5]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[4]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[4]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[3]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[3]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[2]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[2]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[1]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[1]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[0]                                 ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|otri[0]                                 ; out              ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][7]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[7]                        ; dataout          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][6]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[6]                        ; dataout          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][5]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[5]                        ; dataout          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][4]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[4]                        ; dataout          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][3]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[3]                        ; dataout          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][2]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[2]                        ; dataout          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][1]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[1]                        ; dataout          ;
+; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|segment[0][0]               ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[0]                        ; dataout          ;
+; |DDS|addrreg:inst|pwords_reg[0]                                                       ; |DDS|addrreg:inst|pwords_reg[0]                                                       ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[1]                                                       ; |DDS|addrreg:inst|pwords_reg[1]                                                       ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[2]                                                       ; |DDS|addrreg:inst|pwords_reg[2]                                                       ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[3]                                                       ; |DDS|addrreg:inst|pwords_reg[3]                                                       ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[4]                                                       ; |DDS|addrreg:inst|pwords_reg[4]                                                       ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[5]                                                       ; |DDS|addrreg:inst|pwords_reg[5]                                                       ; regout           ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[0]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[0]                                     ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[1]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[1]                                     ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[2]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[2]                                     ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[3]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[3]                                     ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[4]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[4]                                     ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[5]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[5]                                     ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~1                                  ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~5                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~5                  ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~6                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~6                  ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~7                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~7                  ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~8                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~8                  ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~9                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~9                  ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~17                                 ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~18                                 ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~19                                 ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~20                                 ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~20                                 ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~21                                 ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~21                                 ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
++---------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                ;
++----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                            ; Output Port Type ;
++----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |DDS|fwords[0]                                                                         ; |DDS|fwords[0]                                                                              ; out              ;
+; |DDS|fwords[1]                                                                         ; |DDS|fwords[1]                                                                              ; out              ;
+; |DDS|fwords[2]                                                                         ; |DDS|fwords[2]                                                                              ; out              ;
+; |DDS|fwords[3]                                                                         ; |DDS|fwords[3]                                                                              ; out              ;
+; |DDS|fwords[4]                                                                         ; |DDS|fwords[4]                                                                              ; out              ;
+; |DDS|fwords[5]                                                                         ; |DDS|fwords[5]                                                                              ; out              ;
+; |DDS|fwords[6]                                                                         ; |DDS|fwords[6]                                                                              ; out              ;
+; |DDS|fwords[7]                                                                         ; |DDS|fwords[7]                                                                              ; out              ;
+; |DDS|fwords[8]                                                                         ; |DDS|fwords[8]                                                                              ; out              ;
+; |DDS|fwords[9]                                                                         ; |DDS|fwords[9]                                                                              ; out              ;
+; |DDS|fwords[10]                                                                        ; |DDS|fwords[10]                                                                             ; out              ;
+; |DDS|fwords[11]                                                                        ; |DDS|fwords[11]                                                                             ; out              ;
+; |DDS|fwords[12]                                                                        ; |DDS|fwords[12]                                                                             ; out              ;
+; |DDS|fwords[13]                                                                        ; |DDS|fwords[13]                                                                             ; out              ;
+; |DDS|fwords[14]                                                                        ; |DDS|fwords[14]                                                                             ; out              ;
+; |DDS|fwords[15]                                                                        ; |DDS|fwords[15]                                                                             ; out              ;
+; |DDS|fwords[16]                                                                        ; |DDS|fwords[16]                                                                             ; out              ;
+; |DDS|fwords[17]                                                                        ; |DDS|fwords[17]                                                                             ; out              ;
+; |DDS|fwords[18]                                                                        ; |DDS|fwords[18]                                                                             ; out              ;
+; |DDS|fwords[19]                                                                        ; |DDS|fwords[19]                                                                             ; out              ;
+; |DDS|pwords[6]                                                                         ; |DDS|pwords[6]                                                                              ; out              ;
+; |DDS|pwords[7]                                                                         ; |DDS|pwords[7]                                                                              ; out              ;
+; |DDS|pwords[8]                                                                         ; |DDS|pwords[8]                                                                              ; out              ;
+; |DDS|pwords[9]                                                                         ; |DDS|pwords[9]                                                                              ; out              ;
+; |DDS|addrreg:inst|fadder_out[0]                                                        ; |DDS|addrreg:inst|fadder_out[0]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[1]                                                        ; |DDS|addrreg:inst|fadder_out[1]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[2]                                                        ; |DDS|addrreg:inst|fadder_out[2]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[3]                                                        ; |DDS|addrreg:inst|fadder_out[3]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[4]                                                        ; |DDS|addrreg:inst|fadder_out[4]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[5]                                                        ; |DDS|addrreg:inst|fadder_out[5]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[6]                                                        ; |DDS|addrreg:inst|fadder_out[6]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[7]                                                        ; |DDS|addrreg:inst|fadder_out[7]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[8]                                                        ; |DDS|addrreg:inst|fadder_out[8]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[9]                                                        ; |DDS|addrreg:inst|fadder_out[9]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[10]                                                       ; |DDS|addrreg:inst|fadder_out[10]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[11]                                                       ; |DDS|addrreg:inst|fadder_out[11]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[12]                                                       ; |DDS|addrreg:inst|fadder_out[12]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[13]                                                       ; |DDS|addrreg:inst|fadder_out[13]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[14]                                                       ; |DDS|addrreg:inst|fadder_out[14]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[15]                                                       ; |DDS|addrreg:inst|fadder_out[15]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[16]                                                       ; |DDS|addrreg:inst|fadder_out[16]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[17]                                                       ; |DDS|addrreg:inst|fadder_out[17]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[18]                                                       ; |DDS|addrreg:inst|fadder_out[18]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[19]                                                       ; |DDS|addrreg:inst|fadder_out[19]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[20]                                                       ; |DDS|addrreg:inst|fadder_out[20]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[21]                                                       ; |DDS|addrreg:inst|fadder_out[21]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[22]                                                       ; |DDS|addrreg:inst|fadder_out[22]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[23]                                                       ; |DDS|addrreg:inst|fadder_out[23]                                                            ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[6]                                                        ; |DDS|addrreg:inst|pwords_reg[6]                                                             ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[7]                                                        ; |DDS|addrreg:inst|pwords_reg[7]                                                             ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[8]                                                        ; |DDS|addrreg:inst|pwords_reg[8]                                                             ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[9]                                                        ; |DDS|addrreg:inst|pwords_reg[9]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[0]                                                        ; |DDS|addrreg:inst|fwords_reg[0]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[1]                                                        ; |DDS|addrreg:inst|fwords_reg[1]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[2]                                                        ; |DDS|addrreg:inst|fwords_reg[2]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[3]                                                        ; |DDS|addrreg:inst|fwords_reg[3]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[4]                                                        ; |DDS|addrreg:inst|fwords_reg[4]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[5]                                                        ; |DDS|addrreg:inst|fwords_reg[5]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[6]                                                        ; |DDS|addrreg:inst|fwords_reg[6]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[7]                                                        ; |DDS|addrreg:inst|fwords_reg[7]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[8]                                                        ; |DDS|addrreg:inst|fwords_reg[8]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[9]                                                        ; |DDS|addrreg:inst|fwords_reg[9]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[10]                                                       ; |DDS|addrreg:inst|fwords_reg[10]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[11]                                                       ; |DDS|addrreg:inst|fwords_reg[11]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[12]                                                       ; |DDS|addrreg:inst|fwords_reg[12]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[13]                                                       ; |DDS|addrreg:inst|fwords_reg[13]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[14]                                                       ; |DDS|addrreg:inst|fwords_reg[14]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[15]                                                       ; |DDS|addrreg:inst|fwords_reg[15]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[16]                                                       ; |DDS|addrreg:inst|fwords_reg[16]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[17]                                                       ; |DDS|addrreg:inst|fwords_reg[17]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[18]                                                       ; |DDS|addrreg:inst|fwords_reg[18]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[19]                                                       ; |DDS|addrreg:inst|fwords_reg[19]                                                            ; regout           ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[6]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[6]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[7]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[7]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[8]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[8]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[9]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[9]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                       ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                            ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~0                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~0                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~2                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~2                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~3                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~3                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]~1                       ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]~1                            ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[8]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[8]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[7]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[7]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[6]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[6]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]~1                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]~1                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~2                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~2                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~3                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~3                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~4                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~4                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~4                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~4                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~5                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~5                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~6                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~6                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~7                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~7                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~8                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~8                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~9                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~9                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~10                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~10                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~11                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~11                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~12                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~12                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~13                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~13                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~14                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~14                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~15                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~15                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~16                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~16                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~22                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~22                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~23                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~23                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~24                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~24                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~25                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~25                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~26                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~26                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~27                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~27                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~28                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~28                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~29                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~29                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~30                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~30                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~31                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~31                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~32                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~32                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~33                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~33                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~34                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~34                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~35                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~35                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~36                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~36                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~37                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~37                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~38                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~38                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~39                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~39                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[0]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[0]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[1]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[1]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[2]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[2]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[3]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[3]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[4]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[4]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[5]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[5]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[6]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[6]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[7]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[7]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[8]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[8]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[9]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[9]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[10]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[10]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[11]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[11]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[12]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[12]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[13]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[13]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[14]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[14]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[15]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[15]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[16]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[16]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[17]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[17]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[18]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[18]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[19]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[19]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[20]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[20]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[21]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[21]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[22]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[22]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[23]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[23]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                       ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                            ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~0                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~0                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~1                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~1                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~2                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~2                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~3                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~3                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]~1                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]~1                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[22]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[22]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[21]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[21]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[20]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[20]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[19]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[19]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[18]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[18]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[17]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[17]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[16]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[16]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[15]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[15]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[14]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[14]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[13]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[13]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[12]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[12]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[11]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[11]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[10]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[10]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[9]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[9]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[8]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[8]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[7]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[7]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[6]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[6]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[5]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[5]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[4]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[4]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[3]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[3]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[2]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[2]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[1]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[1]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]~1                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]~1                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]~2                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]~2                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]~3                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]~3                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]~4                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]~4                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]~5                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]~5                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]~6                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]~6                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]~7                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]~7                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]~8                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]~8                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]~9                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]~9                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]~10                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]~10                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]~11                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]~11                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]~12                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]~12                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]~13                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]~13                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]~14                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]~14                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]~15                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]~15                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]~16                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]~16                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~17                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~17                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~18                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~18                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~19                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~19                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~20                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~20                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~21                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~21                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~22                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~22                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~23                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~23                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~4                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~4                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~5                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~5                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~6                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~6                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~7                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~7                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~8                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~8                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~9                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~9                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~10                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~10                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~11                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~11                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~12                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~12                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~13                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~13                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~14                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~14                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~15                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~15                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~16                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~16                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~17                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~17                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~18                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~18                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~19                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~19                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~20                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~20                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~21                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~21                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~22                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~22                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~23                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~23                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~24                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~24                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~25                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~25                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~26                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~26                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~27                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~27                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~28                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~28                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~29                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~29                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~30                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~30                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~31                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~31                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~32                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~32                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~33                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~33                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~34                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~34                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~35                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~35                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~36                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~36                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~37                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~37                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~38                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~38                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~39                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~39                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~40                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~40                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~41                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~41                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~42                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~42                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~43                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~43                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~44                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~44                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~45                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~45                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~46                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~46                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~47                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~47                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~48                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~48                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~49                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~49                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~50                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~50                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~51                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~51                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~52                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~52                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~53                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~53                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~54                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~54                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~55                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~55                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~56                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~56                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~57                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~57                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~58                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~58                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~59                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~59                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~60                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~60                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~61                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~61                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~62                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~62                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~63                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~63                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~64                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~64                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~65                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~65                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~66                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~66                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~67                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~67                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~68                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~68                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~69                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~69                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~70                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~70                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~71                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~71                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~72                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~72                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~73                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~73                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~74                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~74                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~75                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~75                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~76                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~76                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~77                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~77                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~78                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~78                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~79                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~79                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~80                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~80                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~81                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~81                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~82                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~82                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~83                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~83                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~84                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~84                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~85                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~85                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~86                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~86                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~87                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~87                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~88                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~88                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~89                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~89                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~90                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~90                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~91                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~91                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~92                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~92                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~93                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~93                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~94                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~94                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~95                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~95                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[23] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[23]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]       ; sout             ;
++----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                ;
++----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                            ; Output Port Type ;
++----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |DDS|fwords[0]                                                                         ; |DDS|fwords[0]                                                                              ; out              ;
+; |DDS|fwords[1]                                                                         ; |DDS|fwords[1]                                                                              ; out              ;
+; |DDS|fwords[2]                                                                         ; |DDS|fwords[2]                                                                              ; out              ;
+; |DDS|fwords[3]                                                                         ; |DDS|fwords[3]                                                                              ; out              ;
+; |DDS|fwords[4]                                                                         ; |DDS|fwords[4]                                                                              ; out              ;
+; |DDS|fwords[5]                                                                         ; |DDS|fwords[5]                                                                              ; out              ;
+; |DDS|fwords[6]                                                                         ; |DDS|fwords[6]                                                                              ; out              ;
+; |DDS|fwords[7]                                                                         ; |DDS|fwords[7]                                                                              ; out              ;
+; |DDS|fwords[8]                                                                         ; |DDS|fwords[8]                                                                              ; out              ;
+; |DDS|fwords[9]                                                                         ; |DDS|fwords[9]                                                                              ; out              ;
+; |DDS|fwords[10]                                                                        ; |DDS|fwords[10]                                                                             ; out              ;
+; |DDS|fwords[11]                                                                        ; |DDS|fwords[11]                                                                             ; out              ;
+; |DDS|fwords[12]                                                                        ; |DDS|fwords[12]                                                                             ; out              ;
+; |DDS|fwords[13]                                                                        ; |DDS|fwords[13]                                                                             ; out              ;
+; |DDS|fwords[14]                                                                        ; |DDS|fwords[14]                                                                             ; out              ;
+; |DDS|fwords[15]                                                                        ; |DDS|fwords[15]                                                                             ; out              ;
+; |DDS|fwords[16]                                                                        ; |DDS|fwords[16]                                                                             ; out              ;
+; |DDS|fwords[17]                                                                        ; |DDS|fwords[17]                                                                             ; out              ;
+; |DDS|fwords[18]                                                                        ; |DDS|fwords[18]                                                                             ; out              ;
+; |DDS|fwords[19]                                                                        ; |DDS|fwords[19]                                                                             ; out              ;
+; |DDS|pwords[6]                                                                         ; |DDS|pwords[6]                                                                              ; out              ;
+; |DDS|pwords[7]                                                                         ; |DDS|pwords[7]                                                                              ; out              ;
+; |DDS|pwords[8]                                                                         ; |DDS|pwords[8]                                                                              ; out              ;
+; |DDS|pwords[9]                                                                         ; |DDS|pwords[9]                                                                              ; out              ;
+; |DDS|addrreg:inst|fadder_out[0]                                                        ; |DDS|addrreg:inst|fadder_out[0]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[1]                                                        ; |DDS|addrreg:inst|fadder_out[1]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[2]                                                        ; |DDS|addrreg:inst|fadder_out[2]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[3]                                                        ; |DDS|addrreg:inst|fadder_out[3]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[4]                                                        ; |DDS|addrreg:inst|fadder_out[4]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[5]                                                        ; |DDS|addrreg:inst|fadder_out[5]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[6]                                                        ; |DDS|addrreg:inst|fadder_out[6]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[7]                                                        ; |DDS|addrreg:inst|fadder_out[7]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[8]                                                        ; |DDS|addrreg:inst|fadder_out[8]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[9]                                                        ; |DDS|addrreg:inst|fadder_out[9]                                                             ; regout           ;
+; |DDS|addrreg:inst|fadder_out[10]                                                       ; |DDS|addrreg:inst|fadder_out[10]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[11]                                                       ; |DDS|addrreg:inst|fadder_out[11]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[12]                                                       ; |DDS|addrreg:inst|fadder_out[12]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[13]                                                       ; |DDS|addrreg:inst|fadder_out[13]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[14]                                                       ; |DDS|addrreg:inst|fadder_out[14]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[15]                                                       ; |DDS|addrreg:inst|fadder_out[15]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[16]                                                       ; |DDS|addrreg:inst|fadder_out[16]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[17]                                                       ; |DDS|addrreg:inst|fadder_out[17]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[18]                                                       ; |DDS|addrreg:inst|fadder_out[18]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[19]                                                       ; |DDS|addrreg:inst|fadder_out[19]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[20]                                                       ; |DDS|addrreg:inst|fadder_out[20]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[21]                                                       ; |DDS|addrreg:inst|fadder_out[21]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[22]                                                       ; |DDS|addrreg:inst|fadder_out[22]                                                            ; regout           ;
+; |DDS|addrreg:inst|fadder_out[23]                                                       ; |DDS|addrreg:inst|fadder_out[23]                                                            ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[6]                                                        ; |DDS|addrreg:inst|pwords_reg[6]                                                             ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[7]                                                        ; |DDS|addrreg:inst|pwords_reg[7]                                                             ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[8]                                                        ; |DDS|addrreg:inst|pwords_reg[8]                                                             ; regout           ;
+; |DDS|addrreg:inst|pwords_reg[9]                                                        ; |DDS|addrreg:inst|pwords_reg[9]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[0]                                                        ; |DDS|addrreg:inst|fwords_reg[0]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[1]                                                        ; |DDS|addrreg:inst|fwords_reg[1]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[2]                                                        ; |DDS|addrreg:inst|fwords_reg[2]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[3]                                                        ; |DDS|addrreg:inst|fwords_reg[3]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[4]                                                        ; |DDS|addrreg:inst|fwords_reg[4]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[5]                                                        ; |DDS|addrreg:inst|fwords_reg[5]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[6]                                                        ; |DDS|addrreg:inst|fwords_reg[6]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[7]                                                        ; |DDS|addrreg:inst|fwords_reg[7]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[8]                                                        ; |DDS|addrreg:inst|fwords_reg[8]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[9]                                                        ; |DDS|addrreg:inst|fwords_reg[9]                                                             ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[10]                                                       ; |DDS|addrreg:inst|fwords_reg[10]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[11]                                                       ; |DDS|addrreg:inst|fwords_reg[11]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[12]                                                       ; |DDS|addrreg:inst|fwords_reg[12]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[13]                                                       ; |DDS|addrreg:inst|fwords_reg[13]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[14]                                                       ; |DDS|addrreg:inst|fwords_reg[14]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[15]                                                       ; |DDS|addrreg:inst|fwords_reg[15]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[16]                                                       ; |DDS|addrreg:inst|fwords_reg[16]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[17]                                                       ; |DDS|addrreg:inst|fwords_reg[17]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[18]                                                       ; |DDS|addrreg:inst|fwords_reg[18]                                                            ; regout           ;
+; |DDS|addrreg:inst|fwords_reg[19]                                                       ; |DDS|addrreg:inst|fwords_reg[19]                                                            ; regout           ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[6]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[6]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[7]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[7]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[8]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[8]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[9]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add1|result_node[9]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                       ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                            ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~0                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~0                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~2                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~2                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~3                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~3                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]~1                       ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]~1                            ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[9]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[8]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[8]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[7]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[7]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[6]                         ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|datab_node[6]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]~1                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]~1                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~2                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~2                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~3                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~3                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~4                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~4                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                     ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~4                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~4                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~5                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~5                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~6                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~6                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~7                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~7                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~8                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~8                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~9                                   ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~9                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~10                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~10                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~11                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~11                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~12                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~12                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~13                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~13                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~14                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~14                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~15                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~15                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~16                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~16                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~22                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~22                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~23                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~23                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~24                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~24                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~25                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~25                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~26                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~26                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~27                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~27                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~28                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~28                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~29                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~29                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~30                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~30                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~31                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~31                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~32                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~32                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~33                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~33                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~34                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~34                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~35                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~35                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~36                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~36                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~37                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~37                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~38                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~38                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~39                                  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|_~39                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[0]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[0]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[1]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[1]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[2]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[2]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[3]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[3]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[4]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[4]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[5]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[5]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[6]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[6]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[7]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[7]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[8]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[8]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[9]                                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[9]                                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[10]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[10]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[11]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[11]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[12]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[12]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[13]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[13]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[14]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[14]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[15]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[15]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[16]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[16]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[17]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[17]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[18]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[18]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[19]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[19]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[20]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[20]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[21]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[21]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[22]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[22]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[23]                                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|result_node[23]                                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                       ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                            ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[0]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~0                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~0                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~1                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~1                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~2                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~2                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~3                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~3                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]~1                      ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]~1                           ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[23]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[22]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[22]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[21]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[21]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[20]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[20]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[19]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[19]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[18]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[18]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[17]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[17]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[16]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[16]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[15]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[15]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[14]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[14]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[13]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[13]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[12]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[12]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[11]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[11]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[10]                        ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[10]                             ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[9]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[9]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[8]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[8]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[7]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[7]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[6]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[6]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[5]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[5]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[4]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[4]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[3]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[3]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[2]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[2]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[1]                         ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|datab_node[1]                              ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]~1                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]~1                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]~2                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]~2                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]~3                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]~3                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]~4                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]~4                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]~5                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]~5                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]~6                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]~6                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]~7                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]~7                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]~8                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]~8                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]~9                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]~9                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]~10                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]~10                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]~11                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]~11                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]~12                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]~12                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]~13                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]~13                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]~14                 ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]~14                      ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]~15                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]~15                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]~16                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]~16                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~17                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~17                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~18                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~18                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~19                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~19                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~20                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~20                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~21                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~21                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~22                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~22                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~23                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~23                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[22]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[21]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[20]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[19]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[18]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[17]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[16]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[15]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[14]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[13]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[12]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[11]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]                    ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[10]                         ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[9]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[8]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                     ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                          ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~4                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~4                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~5                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~5                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~6                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~6                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~7                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~7                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~8                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~8                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~9                                   ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~9                                        ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~10                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~10                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~11                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~11                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~12                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~12                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~13                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~13                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~14                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~14                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~15                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~15                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~16                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~16                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~17                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~17                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~18                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~18                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~19                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~19                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~20                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~20                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~21                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~21                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~22                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~22                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~23                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~23                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~24                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~24                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~25                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~25                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~26                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~26                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~27                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~27                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~28                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~28                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~29                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~29                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~30                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~30                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~31                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~31                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~32                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~32                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~33                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~33                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~34                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~34                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~35                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~35                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~36                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~36                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~37                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~37                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~38                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~38                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~39                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~39                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~40                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~40                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~41                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~41                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~42                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~42                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~43                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~43                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~44                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~44                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~45                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~45                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~46                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~46                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~47                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~47                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~48                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~48                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~49                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~49                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~50                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~50                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~51                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~51                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~52                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~52                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~53                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~53                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~54                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~54                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~55                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~55                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~56                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~56                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~57                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~57                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~58                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~58                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~59                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~59                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~60                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~60                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~61                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~61                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~62                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~62                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~63                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~63                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~64                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~64                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~65                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~65                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~66                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~66                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~67                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~67                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~68                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~68                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~69                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~69                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~70                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~70                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~71                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~71                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~72                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~72                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~73                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~73                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~74                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~74                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~75                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~75                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~76                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~76                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~77                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~77                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~78                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~78                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~79                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~79                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~80                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~80                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~81                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~81                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~82                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~82                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~83                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~83                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~84                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~84                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~85                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~85                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~86                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~86                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~87                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~87                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~88                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~88                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~89                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~89                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~90                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~90                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~91                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~91                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~92                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~92                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~93                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~93                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~94                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~94                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~95                                  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|_~95                                       ; out0             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[23] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[23]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10]~COUT ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10] ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10]      ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]       ; sout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT  ; cout             ;
+; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]  ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]       ; sout             ;
++----------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Mar 17 23:39:05 2022
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off DDS -c DDS
+Info: Using vector source file "D:/Files/Download/工程文件-201808010205-zsl/tj/DDS/DDS.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      16.19 %
+Info: Number of transitions in simulation is 299288
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 151 megabytes
+    Info: Processing ended: Thu Mar 17 23:39:06 2022
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

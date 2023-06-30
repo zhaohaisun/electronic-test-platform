@@ -1,0 +1,55 @@
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+provider=%Altera%
+LayoutFile=layout.inf
+DriverVer= 6/12/2003,1.20.0.6
+
+[Manufacturer]
+%Altera%=Altera
+
+[Altera]
+%USB\VID_0799&PID_7651.DeviceDesc%=APU_USB.Dev, USB\VID_0799&PID_7651
+
+[PreCopySection]
+HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+APU_USB.Files.Ext = 10,System32\Drivers
+APU_USB.Files.Inf = 10,INF
+
+[APU_USB.Dev]
+CopyFiles=APU_USB.Files.Ext
+AddReg=APU_USB.AddReg
+
+[APU_USB.Dev.NT]
+CopyFiles=APU_USB.Files.Ext
+AddReg=APU_USB.AddReg
+
+[APU_USB.Dev.NT.Services]
+Addservice = APU_USB, 0x00000002, APU_USB.AddService
+
+[APU_USB.AddService]
+DisplayName    = %APU_USB.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 2                  ; SERVICE_AUTO_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\APU_USB.SYS
+LoadOrderGroup = Base
+
+[APU_USB.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,APU_USB.SYS
+
+[APU_USB.Files.Ext]
+APU_USB.SYS
+
+[APU_USB.Files.Inf]
+APU_USB.INF
+
+;---------------------------------------------------------------;
+
+[Strings]
+Altera="Altera Corporation"
+USB\VID_0799&PID_7651.DeviceDesc="APU - Altera Programming Unit"
+APU_USB.SvcDesc="Altera Corporation APU USB Driver"

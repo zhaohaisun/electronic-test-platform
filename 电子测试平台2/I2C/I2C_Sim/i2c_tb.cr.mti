@@ -1,0 +1,30 @@
+E:/Desktop/I2C/I2C_Tes/M24XXX_Macro.v {1 {vlog -work work -vopt -stats=none E:/Desktop/I2C/I2C_Tes/M24XXX_Macro.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+
+} {} {}} E:/Desktop/I2C/I2C_Rtl/i2c.v {1 {vlog -work work -vopt -stats=none E:/Desktop/I2C/I2C_Rtl/i2c.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module i2c
+
+Top level modules:
+	i2c
+
+} {} {}} E:/Desktop/I2C/I2C_Tes/M24XXX_Parameters.v {1 {vlog -work work -vopt -stats=none E:/Desktop/I2C/I2C_Tes/M24XXX_Parameters.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+
+} {} {}} E:/Desktop/I2C/I2C_Tes/M24XXX_Memory.v {1 {vlog -work work -vopt -stats=none E:/Desktop/I2C/I2C_Tes/M24XXX_Memory.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module M24XXX
+
+Top level modules:
+	M24XXX
+
+} {} {}} E:/Desktop/I2C/I2C_Tes/i2c_tb.v {1 {vlog -work work -vopt -stats=none E:/Desktop/I2C/I2C_Tes/i2c_tb.v
+Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
+-- Compiling module M24XXX
+-- Compiling module i2c
+-- Compiling module i2c_tb
+
+Top level modules:
+	i2c_tb
+
+} {} {}}

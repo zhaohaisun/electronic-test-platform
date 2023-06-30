@@ -1,0 +1,707 @@
+Fitter report for DDS
+Wed Apr 08 17:30:24 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Fitter Summary
+  3. Fitter Settings
+  4. Parallel Compilation
+  5. Fitter Device Options
+  6. Input Pins
+  7. Output Pins
+  8. All Package Pins
+  9. Control Signals
+ 10. Global & Other Fast Signals
+ 11. Carry Chains
+ 12. Embedded Cells
+ 13. Non-Global High Fan-Out Signals
+ 14. LAB
+ 15. Local Routing Interconnect
+ 16. LAB External Interconnect
+ 17. Row Interconnect
+ 18. LAB Column Interconnect
+ 19. LAB Column Interconnect
+ 20. Fitter Resource Usage Summary
+ 21. Fitter Resource Utilization by Entity
+ 22. Delay Chain Summary
+ 23. Fitter RAM Summary
+ 24. Pin-Out File
+ 25. Fitter Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------+
+; Fitter Summary                                                       ;
++-----------------------+----------------------------------------------+
+; Fitter Status         ; Successful - Wed Apr 08 17:30:24 2020        ;
+; Quartus II Version    ; 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition ;
+; Revision Name         ; DDS                                          ;
+; Top-level Entity Name ; DDS                                          ;
+; Family                ; FLEX10K                                      ;
+; Device                ; EPF10K20TC144-3                              ;
+; Timing Models         ; Final                                        ;
+; Total logic elements  ; 88 / 1,152 ( 8 % )                           ;
+; Total pins            ; 39 / 102 ( 38 % )                            ;
+; Total memory bits     ; 8,192 / 12,288 ( 67 % )                      ;
++-----------------------+----------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------+
+; Fitter Settings                                                                                      ;
++------------------------------------------------------------+--------------------+--------------------+
+; Option                                                     ; Setting            ; Default Value      ;
++------------------------------------------------------------+--------------------+--------------------+
+; Device                                                     ; AUTO               ;                    ;
+; Fitter Effort                                              ; Standard Fit       ; Auto Fit           ;
+; Use smart compilation                                      ; Off                ; Off                ;
+; Use TimeQuest Timing Analyzer                              ; Off                ; Off                ;
+; Router Timing Optimization Level                           ; Normal             ; Normal             ;
+; Placement Effort Multiplier                                ; 1.0                ; 1.0                ;
+; Router Effort Multiplier                                   ; 1.0                ; 1.0                ;
+; Optimize Timing                                            ; Normal compilation ; Normal compilation ;
+; Optimize Timing for ECOs                                   ; Off                ; Off                ;
+; Regenerate full fit report during ECO compiles             ; Off                ; Off                ;
+; Optimize IOC Register Placement for Timing                 ; On                 ; On                 ;
+; Limit to One Fitting Attempt                               ; Off                ; Off                ;
+; Final Placement Optimizations                              ; Automatically      ; Automatically      ;
+; Fitter Aggressive Routability Optimizations                ; Automatically      ; Automatically      ;
+; Fitter Initial Placement Seed                              ; 1                  ; 1                  ;
+; Slow Slew Rate                                             ; Off                ; Off                ;
+; Auto Global Memory Control Signals                         ; Off                ; Off                ;
+; Logic Cell Insertion - Individual Logic Cells              ; On                 ; On                 ;
+; Logic Cell Insertion - I/Os Fed By Carry or Cascade Chains ; On                 ; On                 ;
+; Auto Global Clock                                          ; On                 ; On                 ;
+; Auto Global Output Enable                                  ; On                 ; On                 ;
+; Auto Global Register Control Signals                       ; On                 ; On                 ;
+; Force Fitter to Avoid Periphery Placement Warnings         ; Off                ; Off                ;
++------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------------------------------------------------+
+; Fitter Device Options                                                   ;
++----------------------------------------------+--------------------------+
+; Option                                       ; Setting                  ;
++----------------------------------------------+--------------------------+
+; Enable user-supplied start-up clock (CLKUSR) ; Off                      ;
+; Enable device-wide reset (DEV_CLRn)          ; Off                      ;
+; Enable device-wide output enable (DEV_OE)    ; Off                      ;
+; Enable INIT_DONE output                      ; Off                      ;
+; Configuration scheme                         ; Passive Serial           ;
+; nWS, nRS, nCS, CS                            ; Unreserved               ;
+; RDYnBUSY                                     ; Unreserved               ;
+; Data[7..1]                                   ; Unreserved               ;
+; Reserve all unused pins                      ; As output driving ground ;
+; Base pin-out file on sameframe device        ; Off                      ;
++----------------------------------------------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Input Pins                                                                                                                                 ;
++------------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+---------------+--------------+
+; Name       ; Pin # ; Row ; Col. ; Fan-Out ; Global ; I/O Register ; Use Local Routing Input ; Power Up High ; Single-Pin CE ; I/O Standard ;
++------------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+---------------+--------------+
+; fclk       ; 55    ; --  ; --   ; 54      ; yes    ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[9]  ; 126   ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[0]  ; 124   ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[1]  ; 54    ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[2]  ; 56    ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[3]  ; 125   ; --  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[4]  ; 23    ;  D  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[5]  ; 87    ;  E  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[6]  ; 68    ; --  ; 7    ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[7]  ; 92    ;  C  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; pwords[8]  ; 17    ;  D  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[14] ; 11    ;  C  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[15] ; 96    ;  B  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[16] ; 7     ;  A  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[17] ; 95    ;  B  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[18] ; 29    ;  E  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[19] ; 79    ;  F  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[13] ; 97    ;  B  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[12] ; 14    ;  C  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[11] ; 82    ;  E  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[10] ; 10    ;  B  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[9]  ; 102   ;  A  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[8]  ; 41    ; --  ; 20   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[7]  ; 81    ;  F  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[6]  ; 32    ;  F  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[5]  ; 78    ;  F  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[4]  ; 100   ;  A  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[3]  ; 142   ; --  ; 24   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[2]  ; 28    ;  E  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[1]  ; 18    ;  D  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
+; fwords[0]  ; 21    ;  D  ; --   ; 1       ; no     ; no           ; no                      ; no            ; no            ; TTL          ;
++------------+-------+-----+------+---------+--------+--------------+-------------------------+---------------+---------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Output Pins                                                                                                                                                                           ;
++-----------+-------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
+; Name      ; Pin # ; Row ; Col. ; I/O Register ; Use Local Routing Output ; Power Up High ; Slow Slew Rate ; Single-Pin OE ; Single-Pin CE ; Open Drain ; TRI Primitive ; I/O Standard ;
++-----------+-------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
+; ddsout[0] ; 144   ;  A  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ddsout[1] ; 98    ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ddsout[2] ; 9     ;  B  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ddsout[3] ; 30    ;  F  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ddsout[4] ; 80    ;  F  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ddsout[5] ; 19    ;  D  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ddsout[6] ; 20    ;  D  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
+; ddsout[7] ; 12    ;  C  ; --   ; no           ; no                       ; no            ; no             ; no            ; no            ; no         ; no            ; TTL          ;
++-----------+-------+-----+------+--------------+--------------------------+---------------+----------------+---------------+---------------+------------+---------------+--------------+
+
+
++-----------------------------------+
+; All Package Pins                  ;
++-------+------------+--------------+
+; Pin # ; Usage      ; I/O Standard ;
++-------+------------+--------------+
+; 1     ; #TCK       ;              ;
+; 2     ; ^CONF_DONE ;              ;
+; 3     ; ^nCEO      ;              ;
+; 4     ; #TDO       ;              ;
+; 5     ; VCC_IO     ;              ;
+; 6     ; VCC_INT    ;              ;
+; 7     ; fwords[16] ; TTL          ;
+; 8     ; GND*       ;              ;
+; 9     ; ddsout[2]  ; TTL          ;
+; 10    ; fwords[10] ; TTL          ;
+; 11    ; fwords[14] ; TTL          ;
+; 12    ; ddsout[7]  ; TTL          ;
+; 13    ; GND*       ;              ;
+; 14    ; fwords[12] ; TTL          ;
+; 15    ; GND_IO     ;              ;
+; 16    ; GND_INT    ;              ;
+; 17    ; pwords[8]  ; TTL          ;
+; 18    ; fwords[1]  ; TTL          ;
+; 19    ; ddsout[5]  ; TTL          ;
+; 20    ; ddsout[6]  ; TTL          ;
+; 21    ; fwords[0]  ; TTL          ;
+; 22    ; GND*       ;              ;
+; 23    ; pwords[4]  ; TTL          ;
+; 24    ; VCC_IO     ;              ;
+; 25    ; VCC_INT    ;              ;
+; 26    ; GND*       ;              ;
+; 27    ; GND*       ;              ;
+; 28    ; fwords[2]  ; TTL          ;
+; 29    ; fwords[18] ; TTL          ;
+; 30    ; ddsout[3]  ; TTL          ;
+; 31    ; GND*       ;              ;
+; 32    ; fwords[6]  ; TTL          ;
+; 33    ; GND*       ;              ;
+; 34    ; #TMS       ;              ;
+; 35    ; ^nSTATUS   ;              ;
+; 36    ; GND*       ;              ;
+; 37    ; GND*       ;              ;
+; 38    ; GND*       ;              ;
+; 39    ; GND*       ;              ;
+; 40    ; GND_IO     ;              ;
+; 41    ; fwords[8]  ; TTL          ;
+; 42    ; GND*       ;              ;
+; 43    ; GND*       ;              ;
+; 44    ; GND*       ;              ;
+; 45    ; VCC_IO     ;              ;
+; 46    ; GND*       ;              ;
+; 47    ; GND*       ;              ;
+; 48    ; GND*       ;              ;
+; 49    ; GND*       ;              ;
+; 50    ; GND_IO     ;              ;
+; 51    ; GND*       ;              ;
+; 52    ; VCC_INT    ;              ;
+; 53    ; VCC_INT    ;              ;
+; 54    ; pwords[1]  ; TTL          ;
+; 55    ; fclk       ; TTL          ;
+; 56    ; pwords[2]  ; TTL          ;
+; 57    ; GND_INT    ;              ;
+; 58    ; GND_INT    ;              ;
+; 59    ; GND*       ;              ;
+; 60    ; GND*       ;              ;
+; 61    ; VCC_IO     ;              ;
+; 62    ; GND*       ;              ;
+; 63    ; GND*       ;              ;
+; 64    ; GND*       ;              ;
+; 65    ; GND*       ;              ;
+; 66    ; GND_IO     ;              ;
+; 67    ; GND*       ;              ;
+; 68    ; pwords[6]  ; TTL          ;
+; 69    ; GND*       ;              ;
+; 70    ; GND*       ;              ;
+; 71    ; VCC_IO     ;              ;
+; 72    ; GND*       ;              ;
+; 73    ; GND*       ;              ;
+; 74    ; ^nCONFIG   ;              ;
+; 75    ; VCC_INT    ;              ;
+; 76    ; ^MSEL1     ;              ;
+; 77    ; ^MSEL0     ;              ;
+; 78    ; fwords[5]  ; TTL          ;
+; 79    ; fwords[19] ; TTL          ;
+; 80    ; ddsout[4]  ; TTL          ;
+; 81    ; fwords[7]  ; TTL          ;
+; 82    ; fwords[11] ; TTL          ;
+; 83    ; GND*       ;              ;
+; 84    ; GND_INT    ;              ;
+; 85    ; GND_IO     ;              ;
+; 86    ; GND*       ;              ;
+; 87    ; pwords[5]  ; TTL          ;
+; 88    ; GND*       ;              ;
+; 89    ; GND*       ;              ;
+; 90    ; GND*       ;              ;
+; 91    ; GND*       ;              ;
+; 92    ; pwords[7]  ; TTL          ;
+; 93    ; VCC_INT    ;              ;
+; 94    ; VCC_IO     ;              ;
+; 95    ; fwords[17] ; TTL          ;
+; 96    ; fwords[15] ; TTL          ;
+; 97    ; fwords[13] ; TTL          ;
+; 98    ; ddsout[1]  ; TTL          ;
+; 99    ; GND*       ;              ;
+; 100   ; fwords[4]  ; TTL          ;
+; 101   ; GND*       ;              ;
+; 102   ; fwords[9]  ; TTL          ;
+; 103   ; GND_INT    ;              ;
+; 104   ; GND_IO     ;              ;
+; 105   ; #TDI       ;              ;
+; 106   ; ^nCE       ;              ;
+; 107   ; ^DCLK      ;              ;
+; 108   ; ^DATA0     ;              ;
+; 109   ; GND*       ;              ;
+; 110   ; GND*       ;              ;
+; 111   ; GND*       ;              ;
+; 112   ; GND*       ;              ;
+; 113   ; GND*       ;              ;
+; 114   ; GND*       ;              ;
+; 115   ; VCC_IO     ;              ;
+; 116   ; GND*       ;              ;
+; 117   ; GND*       ;              ;
+; 118   ; GND*       ;              ;
+; 119   ; GND*       ;              ;
+; 120   ; GND*       ;              ;
+; 121   ; GND*       ;              ;
+; 122   ; GND*       ;              ;
+; 123   ; VCC_INT    ;              ;
+; 124   ; pwords[0]  ; TTL          ;
+; 125   ; pwords[3]  ; TTL          ;
+; 126   ; pwords[9]  ; TTL          ;
+; 127   ; GND_INT    ;              ;
+; 128   ; GND*       ;              ;
+; 129   ; GND_IO     ;              ;
+; 130   ; GND*       ;              ;
+; 131   ; GND*       ;              ;
+; 132   ; GND*       ;              ;
+; 133   ; GND*       ;              ;
+; 134   ; VCC_IO     ;              ;
+; 135   ; GND*       ;              ;
+; 136   ; GND*       ;              ;
+; 137   ; GND*       ;              ;
+; 138   ; GND*       ;              ;
+; 139   ; GND_IO     ;              ;
+; 140   ; GND*       ;              ;
+; 141   ; GND*       ;              ;
+; 142   ; fwords[3]  ; TTL          ;
+; 143   ; GND*       ;              ;
+; 144   ; ddsout[0]  ; TTL          ;
++-------+------------+--------------+
+
+
++-----------------------------------------------+
+; Control Signals                               ;
++------+-------+---------+-------+--------------+
+; Name ; Pin # ; Fan-Out ; Usage ; Global Usage ;
++------+-------+---------+-------+--------------+
+; fclk ; 55    ; 54      ; Clock ; Pin          ;
++------+-------+---------+-------+--------------+
+
+
++--------------------------------------+
+; Global & Other Fast Signals          ;
++-----------+-------+---------+--------+
+; Name      ; Pin # ; Fan-Out ; Global ;
++-----------+-------+---------+--------+
+; fclk      ; 55    ; 54      ; yes    ;
+; pwords[9] ; 126   ; 1       ; no     ;
+; pwords[0] ; 124   ; 1       ; no     ;
+; pwords[1] ; 54    ; 1       ; no     ;
+; pwords[2] ; 56    ; 1       ; no     ;
+; pwords[3] ; 125   ; 1       ; no     ;
++-----------+-------+---------+--------+
+
+
++---------------------------------------------+
+; Carry Chains                                ;
++--------------------+------------------------+
+; Carry Chain Length ; Number of Carry Chains ;
++--------------------+------------------------+
+; 0 - 1              ; 0                      ;
+; 2 - 3              ; 0                      ;
+; 4 - 5              ; 0                      ;
+; 6 - 7              ; 0                      ;
+; 8 - 9              ; 0                      ;
+; 10 - 11            ; 1                      ;
+; 12 - 13            ; 0                      ;
+; 14 - 15            ; 0                      ;
+; 16 - 17            ; 0                      ;
+; 18 - 19            ; 0                      ;
+; 20 - 21            ; 0                      ;
+; 22 - 23            ; 0                      ;
+; 24 - 25            ; 1                      ;
++--------------------+------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Embedded Cells                                                                    ;
++--------+-----------------------------------------------------------+------+-------+
+; Cell # ; Name                                                      ; Mode ; Turbo ;
++--------+-----------------------------------------------------------+------+-------+
+; EC2_A  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[0] ; RAM  ; Off   ;
+; EC1_B  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[1] ; RAM  ; Off   ;
+; EC2_B  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[2] ; RAM  ; Off   ;
+; EC1_F  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[3] ; RAM  ; Off   ;
+; EC2_F  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[4] ; RAM  ; Off   ;
+; EC1_D  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[5] ; RAM  ; Off   ;
+; EC2_D  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[6] ; RAM  ; Off   ;
+; EC1_A  ; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|q[7] ; RAM  ; Off   ;
++--------+-----------------------------------------------------------+------+-------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                  ;
++----------------------------------------------------------------------------------------+---------+
+; Name                                                                                   ; Fan-Out ;
++----------------------------------------------------------------------------------------+---------+
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT  ; 9       ;
+; addrreg:inst|lpm_add_sub:Add1|addcore:adder|unreg_res_node[9]~10                       ; 8       ;
+; addrreg:inst|fadder_out[21]~32                                                         ; 2       ;
+; addrreg:inst|fadder_out[22]~33                                                         ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[9]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[8]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[13]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[11]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[12]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT  ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[19]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[21]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[22]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[20]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT  ; 2       ;
+; addrreg:inst|fadder_out[19]~30                                                         ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[16]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[18]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[17]~COUT ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[15]~COUT ; 2       ;
+; addrreg:inst|fadder_out[20]~31                                                         ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[14]~COUT ; 2       ;
+; addrreg:inst|fadder_out[23]~24                                                         ; 2       ;
+; addrreg:inst|fadder_out[14]~25                                                         ; 2       ;
+; addrreg:inst|fadder_out[17]~28                                                         ; 2       ;
+; addrreg:inst|fadder_out[18]~29                                                         ; 2       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[10]~COUT ; 2       ;
+; addrreg:inst|fadder_out[15]~26                                                         ; 2       ;
+; addrreg:inst|fadder_out[16]~27                                                         ; 2       ;
+; addrreg:inst|fadder_out[2]~45                                                          ; 1       ;
+; addrreg:inst|fwords_reg[2]~37                                                          ; 1       ;
+; addrreg:inst|lpm_add_sub:Add0|addcore:adder|unreg_res_node[23]~24                      ; 1       ;
+; addrreg:inst|fadder_out[3]~44                                                          ; 1       ;
+; fwords[0]                                                                              ; 1       ;
+; fwords[8]                                                                              ; 1       ;
+; fwords[9]                                                                              ; 1       ;
++----------------------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------+
+; LAB                                       ;
++--------------------------+----------------+
+; Number of Logic Elements ; Number of LABs ;
++--------------------------+----------------+
+; 0                        ; 95             ;
+; 1                        ; 40             ;
+; 2                        ; 4              ;
+; 3                        ; 0              ;
+; 4                        ; 0              ;
+; 5                        ; 0              ;
+; 6                        ; 0              ;
+; 7                        ; 0              ;
+; 8                        ; 5              ;
++--------------------------+----------------+
+
+
++----------------------------------------------+
+; Local Routing Interconnect                   ;
++-----------------------------+----------------+
+; Local Routing Interconnects ; Number of LABs ;
++-----------------------------+----------------+
+; 0                           ; 142            ;
+; 1                           ; 0              ;
+; 2                           ; 0              ;
+; 3                           ; 2              ;
++-----------------------------+----------------+
+
+
++---------------------------------------------+
+; LAB External Interconnect                   ;
++----------------------------+----------------+
+; LAB External Interconnects ; Number of LABs ;
++----------------------------+----------------+
+; 0                          ; 95             ;
+; 1                          ; 40             ;
+; 2                          ; 4              ;
+; 3                          ; 0              ;
+; 4                          ; 0              ;
+; 5                          ; 0              ;
+; 6                          ; 0              ;
+; 7                          ; 0              ;
+; 8                          ; 0              ;
+; 9                          ; 0              ;
+; 10                         ; 2              ;
+; 11                         ; 0              ;
+; 12                         ; 1              ;
+; 13                         ; 0              ;
+; 14                         ; 0              ;
+; 15                         ; 0              ;
+; 16                         ; 2              ;
++----------------------------+----------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Row Interconnect                                                                        ;
++-------+--------------------+-----------------------------+------------------------------+
+; Row   ; Interconnect Used  ; Left Half Interconnect Used ; Right Half Interconnect Used ;
++-------+--------------------+-----------------------------+------------------------------+
+;  A    ;  5 / 96 ( 5 % )    ;  10 / 48 ( 21 % )           ;  0 / 48 ( 0 % )              ;
+;  B    ;  6 / 96 ( 6 % )    ;  10 / 48 ( 21 % )           ;  1 / 48 ( 2 % )              ;
+;  C    ;  3 / 96 ( 3 % )    ;  0 / 48 ( 0 % )             ;  7 / 48 ( 15 % )             ;
+;  D    ;  37 / 96 ( 39 % )  ;  15 / 48 ( 31 % )           ;  34 / 48 ( 71 % )            ;
+;  E    ;  4 / 96 ( 4 % )    ;  0 / 48 ( 0 % )             ;  2 / 48 ( 4 % )              ;
+;  F    ;  6 / 96 ( 6 % )    ;  10 / 48 ( 21 % )           ;  0 / 48 ( 0 % )              ;
+; Total ;  61 / 576 ( 11 % ) ;  45 / 288 ( 16 % )          ;  44 / 288 ( 15 % )           ;
++-------+--------------------+-----------------------------+------------------------------+
+
+
++---------------------------+
+; LAB Column Interconnect   ;
++-------+-------------------+
+; Col.  ; Interconnect Used ;
++-------+-------------------+
+; 1     ;  6 / 24 ( 25 % )  ;
+; 2     ;  0 / 24 ( 0 % )   ;
+; 3     ;  5 / 24 ( 21 % )  ;
+; 4     ;  0 / 24 ( 0 % )   ;
+; 5     ;  0 / 24 ( 0 % )   ;
+; 6     ;  0 / 24 ( 0 % )   ;
+; 7     ;  2 / 24 ( 8 % )   ;
+; 8     ;  0 / 24 ( 0 % )   ;
+; 9     ;  0 / 24 ( 0 % )   ;
+; 10    ;  0 / 24 ( 0 % )   ;
+; 11    ;  1 / 24 ( 4 % )   ;
+; 12    ;  1 / 24 ( 4 % )   ;
+; 13    ;  7 / 24 ( 29 % )  ;
+; 14    ;  3 / 24 ( 13 % )  ;
+; 15    ;  5 / 24 ( 21 % )  ;
+; 16    ;  4 / 24 ( 17 % )  ;
+; 17    ;  4 / 24 ( 17 % )  ;
+; 18    ;  3 / 24 ( 13 % )  ;
+; 19    ;  1 / 24 ( 4 % )   ;
+; 20    ;  3 / 24 ( 13 % )  ;
+; 21    ;  1 / 24 ( 4 % )   ;
+; 22    ;  0 / 24 ( 0 % )   ;
+; 23    ;  1 / 24 ( 4 % )   ;
+; 24    ;  2 / 24 ( 8 % )   ;
+; Total ;  49 / 576 ( 9 % ) ;
++-------+-------------------+
+
+
++---------------------------+
+; LAB Column Interconnect   ;
++-------+-------------------+
+; Col.  ; Interconnect Used ;
++-------+-------------------+
+; 1     ;  0 / 24 ( 0 % )   ;
+; Total ;  0 / 24 ( 0 % )   ;
++-------+-------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Usage Summary                                                                                        ;
++-----------------------------------+----------------------------------------------------------------------------------+
+; Resource                          ; Usage                                                                            ;
++-----------------------------------+----------------------------------------------------------------------------------+
+; Total logic elements              ; 88 / 1,152 ( 8 % )                                                               ;
+; Registers                         ; 54 / 1,152 ( 5 % )                                                               ;
+; Logic elements in carry chains    ; 34                                                                               ;
+; User inserted logic elements      ; 0                                                                                ;
+; I/O pins                          ; 39 / 102 ( 38 % )                                                                ;
+;     -- Clock pins                 ; 2 / 2 ( 100 % )                                                                  ;
+;     -- Dedicated input pins       ; 5 / 4 ( 125 % )                                                                  ;
+; Global signals                    ; 1                                                                                ;
+; EABs                              ; 4 / 6 ( 67 % )                                                                   ;
+; Total memory bits                 ; 8,192 / 12,288 ( 67 % )                                                          ;
+; Total RAM block bits              ; 8,192 / 12,288 ( 67 % )                                                          ;
+; Maximum fan-out node              ; fclk                                                                             ;
+; Maximum fan-out                   ; 54                                                                               ;
+; Highest non-global fan-out signal ; addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ;
+; Highest non-global fan-out        ; 16                                                                               ;
+; Total fan-out                     ; 292                                                                              ;
+; Average fan-out                   ; 2.16                                                                             ;
++-----------------------------------+----------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                  ;
++---------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node            ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                      ; Library Name ;
++---------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------+--------------+
+; |DDS                                  ; 88 (0)      ; 54           ; 8192        ; 39   ; 34 (0)       ; 54 (0)            ; 0 (0)            ; 34 (0)          ; 0 (0)      ; |DDS                                                                     ; work         ;
+;    |addrreg:inst|                     ; 88 (54)     ; 54           ; 0           ; 0    ; 34 (0)       ; 54 (54)           ; 0 (0)            ; 34 (0)          ; 0 (0)      ; |DDS|addrreg:inst                                                        ; work         ;
+;       |lpm_add_sub:Add0|              ; 24 (0)      ; 0            ; 0           ; 0    ; 24 (0)       ; 0 (0)             ; 0 (0)            ; 24 (0)          ; 0 (0)      ; |DDS|addrreg:inst|lpm_add_sub:Add0                                       ; work         ;
+;          |addcore:adder|              ; 24 (1)      ; 0            ; 0           ; 0    ; 24 (1)       ; 0 (0)             ; 0 (0)            ; 24 (1)          ; 0 (0)      ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder                         ; work         ;
+;             |a_csnbuffer:result_node| ; 23 (23)     ; 0            ; 0           ; 0    ; 23 (23)      ; 0 (0)             ; 0 (0)            ; 23 (23)         ; 0 (0)      ; |DDS|addrreg:inst|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node ; work         ;
+;       |lpm_add_sub:Add1|              ; 10 (0)      ; 0            ; 0           ; 0    ; 10 (0)       ; 0 (0)             ; 0 (0)            ; 10 (0)          ; 0 (0)      ; |DDS|addrreg:inst|lpm_add_sub:Add1                                       ; work         ;
+;          |addcore:adder|              ; 10 (1)      ; 0            ; 0           ; 0    ; 10 (1)       ; 0 (0)             ; 0 (0)            ; 10 (1)          ; 0 (0)      ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder                         ; work         ;
+;             |a_csnbuffer:result_node| ; 9 (9)       ; 0            ; 0           ; 0    ; 9 (9)        ; 0 (0)             ; 0 (0)            ; 9 (9)           ; 0 (0)      ; |DDS|addrreg:inst|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node ; work         ;
+;    |wave_rom:inst1|                   ; 0 (0)       ; 0            ; 8192        ; 0    ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DDS|wave_rom:inst1                                                      ; work         ;
+;       |lpm_rom:lpm_rom_component|     ; 0 (0)       ; 0            ; 8192        ; 0    ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component                            ; work         ;
+;          |altrom:srom|                ; 0 (0)       ; 0            ; 8192        ; 0    ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DDS|wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom                ; work         ;
++---------------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+--------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------+
+; Delay Chain Summary                 ;
++------------+----------+-------------+
+; Name       ; Pin Type ; Pad to Core ;
++------------+----------+-------------+
+; fclk       ; Input    ; OFF         ;
+; pwords[9]  ; Input    ; OFF         ;
+; pwords[0]  ; Input    ; OFF         ;
+; pwords[1]  ; Input    ; OFF         ;
+; pwords[2]  ; Input    ; OFF         ;
+; pwords[3]  ; Input    ; OFF         ;
+; pwords[4]  ; Input    ; OFF         ;
+; pwords[5]  ; Input    ; OFF         ;
+; pwords[6]  ; Input    ; OFF         ;
+; pwords[7]  ; Input    ; OFF         ;
+; pwords[8]  ; Input    ; OFF         ;
+; fwords[14] ; Input    ; OFF         ;
+; fwords[15] ; Input    ; OFF         ;
+; fwords[16] ; Input    ; OFF         ;
+; fwords[17] ; Input    ; OFF         ;
+; fwords[18] ; Input    ; OFF         ;
+; fwords[19] ; Input    ; OFF         ;
+; fwords[13] ; Input    ; OFF         ;
+; fwords[12] ; Input    ; OFF         ;
+; fwords[11] ; Input    ; OFF         ;
+; fwords[10] ; Input    ; OFF         ;
+; fwords[9]  ; Input    ; OFF         ;
+; fwords[8]  ; Input    ; OFF         ;
+; fwords[7]  ; Input    ; OFF         ;
+; fwords[6]  ; Input    ; OFF         ;
+; fwords[5]  ; Input    ; OFF         ;
+; fwords[4]  ; Input    ; OFF         ;
+; fwords[3]  ; Input    ; OFF         ;
+; fwords[2]  ; Input    ; OFF         ;
+; fwords[1]  ; Input    ; OFF         ;
+; fwords[0]  ; Input    ; OFF         ;
+; ddsout[0]  ; Output   ; OFF         ;
+; ddsout[1]  ; Output   ; OFF         ;
+; ddsout[2]  ; Output   ; OFF         ;
+; ddsout[3]  ; Output   ; OFF         ;
+; ddsout[4]  ; Output   ; OFF         ;
+; ddsout[5]  ; Output   ; OFF         ;
+; ddsout[6]  ; Output   ; OFF         ;
+; ddsout[7]  ; Output   ; OFF         ;
++------------+----------+-------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter RAM Summary                                                                                                                                                                                                                                                                            ;
++--------------------------------------------------------------+------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+------+------------+----------------------------+
+; Name                                                         ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Port A Input Registers ; Port A Output Registers ; Port B Input Registers ; Port B Output Registers ; Size ; EABs ; MIF        ; Location                   ;
++--------------------------------------------------------------+------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+------+------------+----------------------------+
+; wave_rom:inst1|lpm_rom:lpm_rom_component|altrom:srom|content ; ROM  ; 1024         ; 8            ; --           ; --           ; no                     ; no                      ; --                     ; --                      ; 8192 ; 4    ; myfile.mif ; ESB_A, ESB_B, ESB_F, ESB_D ;
++--------------------------------------------------------------+------+--------------+--------------+--------------+--------------+------------------------+-------------------------+------------------------+-------------------------+------+------+------------+----------------------------+
+Note: Fitter may spread logical memories into multiple blocks to improve timing. The actual required RAM blocks can be found in the Fitter Resource Usage section.
+
+
++--------------+
+; Pin-Out File ;
++--------------+
+The pin-out file can be found in C:/Users/zhans/Desktop/progr/DDS/DDS.pin.
+
+
++-----------------+
+; Fitter Messages ;
++-----------------+
+Info: *******************************************************************
+Info: Running Quartus II Fitter
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Apr 08 17:30:22 2020
+Info: Command: quartus_fit --read_settings_files=off --write_settings_files=off DDS -c DDS
+Info: Automatically selected device EPF10K20TC144-3 for design DDS
+Info: Fitting design with smaller device may be possible, but smaller device must be specified
+Info: Fitter is using the Classic Timing Analyzer
+Info: Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
+    Info: Assuming a global fmax requirement of 1000 MHz
+    Info: Not setting a global tsu requirement
+    Info: Not setting a global tco requirement
+    Info: Not setting a global tpd requirement
+Info: Inserted 0 logic cells in first fitting attempt
+Info: Started fitting attempt 1 on Wed Apr 08 2020 at 17:30:23
+Info: Fitter placement preparation operations beginning
+Info: Fitter placement preparation operations ending: elapsed time is 00:00:00
+Info: Fitter placement operations beginning
+Info: Fitter placement operations ending: elapsed time is 00:00:00
+Info: Fitter routing operations beginning
+Info: Fitter routing operations ending: elapsed time is 00:00:00
+Info: Quartus II Fitter was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 248 megabytes
+    Info: Processing ended: Wed Apr 08 17:30:24 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

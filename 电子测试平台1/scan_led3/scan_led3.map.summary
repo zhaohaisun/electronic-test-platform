@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Sep 27 13:45:34 2016
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : scan_led3
+Top-level Entity Name : scan_led3
+Family : Cyclone II
+Total logic elements : 20
+    Total combinational functions : 20
+    Dedicated logic registers : 3
+Total registers : 3
+Total pins : 25
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

@@ -1,0 +1,149 @@
+|scan_led3
+qa <= 7449:inst3.OA
+din0[0] => mux4_3_1:inst1.d0[0]
+din0[1] => mux4_3_1:inst1.d0[1]
+din0[2] => mux4_3_1:inst1.d0[2]
+din0[3] => mux4_3_1:inst1.d0[3]
+din1[0] => mux4_3_1:inst1.d1[0]
+din1[1] => mux4_3_1:inst1.d1[1]
+din1[2] => mux4_3_1:inst1.d1[2]
+din1[3] => mux4_3_1:inst1.d1[3]
+din2[0] => mux4_3_1:inst1.d2[0]
+din2[1] => mux4_3_1:inst1.d2[1]
+din2[2] => mux4_3_1:inst1.d2[2]
+din2[3] => mux4_3_1:inst1.d2[3]
+clk => counter4:inst.clk
+clk => clkout.DATAIN
+qb <= 7449:inst3.OB
+qc <= 7449:inst3.OC
+qd <= 7449:inst3.OD
+qe <= 7449:inst3.OE
+qf <= 7449:inst3.OF
+qg <= 7449:inst3.OG
+clkout <= clk.DB_MAX_OUTPUT_PORT_TYPE
+b[2] <= inst4[2].DB_MAX_OUTPUT_PORT_TYPE
+bsg[0] <= inst4[0].DB_MAX_OUTPUT_PORT_TYPE
+bsg[1] <= inst4[1].DB_MAX_OUTPUT_PORT_TYPE
+bsg[2] <= inst4[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scan_led3|7449:inst3
+OG <= 33.DB_MAX_OUTPUT_PORT_TYPE
+C => 9.IN0
+BIN => 13.IN1
+BIN => 12.IN1
+BIN => 11.IN1
+BIN => 14.IN1
+B => 8.IN0
+A => 7.IN0
+D => 10.IN0
+OF <= 37.DB_MAX_OUTPUT_PORT_TYPE
+OE <= 32.DB_MAX_OUTPUT_PORT_TYPE
+OD <= 36.DB_MAX_OUTPUT_PORT_TYPE
+OC <= 31.DB_MAX_OUTPUT_PORT_TYPE
+OB <= 35.DB_MAX_OUTPUT_PORT_TYPE
+OA <= 34.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scan_led3|mux4_3_1:inst1
+d0[0] => dout~7.DATAB
+d0[1] => dout~6.DATAB
+d0[2] => dout~5.DATAB
+d0[3] => dout~4.DATAB
+d1[0] => dout~3.DATAB
+d1[1] => dout~2.DATAB
+d1[2] => dout~1.DATAB
+d1[3] => dout~0.DATAB
+d2[0] => dout~3.DATAA
+d2[1] => dout~2.DATAA
+d2[2] => dout~1.DATAA
+d2[3] => dout~0.DATAA
+sel[0] => Equal0.IN1
+sel[0] => Equal1.IN0
+sel[1] => Equal0.IN0
+sel[1] => Equal1.IN1
+dout[0] <= dout~7.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout~6.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout~5.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout~4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scan_led3|counter4:inst
+q[0] <= 74161:inst.QA
+q[1] <= 74161:inst.QB
+clk => inst3.CLK
+clk => 74161:inst.CLK
+
+
+|scan_led3|counter4:inst|74161:inst
+clk => f74161:sub.clk
+ldn => ~NO_FANOUT~
+clrn => f74161:sub.clrn
+enp => f74161:sub.enp
+ent => f74161:sub.ent
+d => ~NO_FANOUT~
+c => ~NO_FANOUT~
+b => ~NO_FANOUT~
+a => ~NO_FANOUT~
+qd <= f74161:sub.qd
+qc <= f74161:sub.qc
+qb <= f74161:sub.qb
+qa <= f74161:sub.qa
+rco <= f74161:sub.rco
+
+
+|scan_led3|counter4:inst|74161:inst|f74161:sub
+RCO <= 105.DB_MAX_OUTPUT_PORT_TYPE
+CLRN => 110.ACLR
+CLRN => 99.ACLR
+CLRN => 87.ACLR
+CLRN => 9.ACLR
+CLK => 110.CLK
+CLK => 99.CLK
+CLK => 87.CLK
+CLK => 9.CLK
+D => 113.IN0
+LDN => 117.IN0
+LDN => 77.IN1
+LDN => 86.IN1
+LDN => 98.IN1
+LDN => 108.IN1
+ENP => 106.IN0
+ENP => 96.IN0
+ENP => 89.IN0
+ENP => 79.IN0
+C => 101.IN0
+B => 91.IN0
+A => 76.IN0
+ENT => 82.DATAIN
+QD <= 110.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 99.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 87.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 9.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|scan_led3|decoder2_3:inst2
+seg[0] <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+seg[1] <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+seg[2] <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+data[0] => 74139:inst.A1
+data[1] => 74139:inst.B1
+
+
+|scan_led3|decoder2_3:inst2|74139:inst
+Y10N <= 33.DB_MAX_OUTPUT_PORT_TYPE
+G1N => 7.IN0
+B1 => 11.IN0
+A1 => 8.IN0
+Y11N <= 34.DB_MAX_OUTPUT_PORT_TYPE
+Y12N <= 35.DB_MAX_OUTPUT_PORT_TYPE
+Y13N <= 36.DB_MAX_OUTPUT_PORT_TYPE
+Y20N <= 37.DB_MAX_OUTPUT_PORT_TYPE
+G2N => 12.IN0
+B2 => 16.IN0
+A2 => 13.IN0
+Y21N <= 38.DB_MAX_OUTPUT_PORT_TYPE
+Y22N <= 39.DB_MAX_OUTPUT_PORT_TYPE
+Y23N <= 40.DB_MAX_OUTPUT_PORT_TYPE
+
+
